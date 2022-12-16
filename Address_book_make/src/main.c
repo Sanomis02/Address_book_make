@@ -31,8 +31,8 @@ int main(void) {
     char *homedir = NULL;
     char *file_path = NULL;
 
-    if((homedir = getenv("HOME")) == NULL) { //Pirmiausiai patikriname $HOME
-        homedir = getpwuid(getuid())->pw_dir; //Jei neegzistuoja, getpwuid()
+    if((homedir = getenv("HOME")) == NULL) {
+        homedir = getpwuid(getuid())->pw_dir;
     }
 
     file_path = strcat(homedir, "/data.csv");
@@ -70,7 +70,7 @@ int main(void) {
             case '2': //add element to the end
                 func_add(&list);
                 break;
-            case '3': //add element by index
+            case '3': //add element by index/Jei neegzistuoja, getpwuid()
                 func_add_index(&list);
                 break;
             case '4': //remove element by index
