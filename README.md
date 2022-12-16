@@ -35,7 +35,10 @@ Program works in a text interface, here is a list of functions a user can perfor
     
 When prompted to choose options to find a person by criteria: 
 
-[10] - searches by name
-[11] - searches by surname;
-[12] - searches by email
-[13] - searches by number
+    [10] - searches by name
+    
+    [11] - searches by surname
+    
+    [12] - searches by email
+    
+    [13] - searches by number
